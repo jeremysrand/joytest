@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DB59E992487471900C57C78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DB59E982487471900C57C78 /* main.c */; };
+		9DB59E9B2487471900C57C78 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 9DB59E9A2487471900C57C78 /* Makefile */; };
+		9DB59E9E2487471900C57C78 /* AppleCommander.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB59E9D2487471900C57C78 /* AppleCommander.jar */; };
+		9DB59EA02487471900C57C78 /* bastokenizer-tools-bt-0.2.0.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB59E9F2487471900C57C78 /* bastokenizer-tools-bt-0.2.0.jar */; };
+		9DB59EA22487471900C57C78 /* createDiskImage in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9DB59EA12487471900C57C78 /* createDiskImage */; };
+		9DB59EA42487471900C57C78 /* bt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9DB59EA32487471900C57C78 /* bt */; };
+		9DB59EA62487471900C57C78 /* DevApple.vii in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9DB59EA52487471900C57C78 /* DevApple.vii */; };
+		9DB59EA82487471900C57C78 /* dos33_template.dsk in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9DB59EA72487471900C57C78 /* dos33_template.dsk */; };
+		9DB59EAA2487471900C57C78 /* errorFilter.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9DB59EA92487471900C57C78 /* errorFilter.sh */; };
+		9DB59EAC2487471900C57C78 /* head.mk in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9DB59EAB2487471900C57C78 /* head.mk */; };
+		9DB59EAE2487471900C57C78 /* prodos_template.dsk in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9DB59EAD2487471900C57C78 /* prodos_template.dsk */; };
+		9DB59EB02487471900C57C78 /* tail.mk in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9DB59EAF2487471900C57C78 /* tail.mk */; };
+		9DB59EB22487471900C57C78 /* V2Make.scpt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9DB59EB12487471900C57C78 /* V2Make.scpt */; };
+		9DB59EB52487471900C57C78 /* joytest.xcscheme in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9DB59EB42487471900C57C78 /* joytest.xcscheme */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9DB59E942487471900C57C78 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				9DB59EAE2487471900C57C78 /* prodos_template.dsk in CopyFiles */,
+				9DB59EA42487471900C57C78 /* bt in CopyFiles */,
+				9DB59EA82487471900C57C78 /* dos33_template.dsk in CopyFiles */,
+				9DB59EA22487471900C57C78 /* createDiskImage in CopyFiles */,
+				9DB59EB22487471900C57C78 /* V2Make.scpt in CopyFiles */,
+				9DB59EAC2487471900C57C78 /* head.mk in CopyFiles */,
+				9DB59EB52487471900C57C78 /* joytest.xcscheme in CopyFiles */,
+				9DB59EA62487471900C57C78 /* DevApple.vii in CopyFiles */,
+				9DB59EAA2487471900C57C78 /* errorFilter.sh in CopyFiles */,
+				9DB59EB02487471900C57C78 /* tail.mk in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9DB59E8E2487471900C57C78 /* joytest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = joytest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB59E912487471900C57C78 /* joytest.dsk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = joytest.dsk; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB59E962487471900C57C78 /* doNotBuild */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = doNotBuild; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB59E982487471900C57C78 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		9DB59E9A2487471900C57C78 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		9DB59E9D2487471900C57C78 /* AppleCommander.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = AppleCommander.jar; sourceTree = "<group>"; };
+		9DB59E9F2487471900C57C78 /* bastokenizer-tools-bt-0.2.0.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "bastokenizer-tools-bt-0.2.0.jar"; sourceTree = "<group>"; };
+		9DB59EA12487471900C57C78 /* createDiskImage */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = createDiskImage; sourceTree = "<group>"; };
+		9DB59EA32487471900C57C78 /* bt */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bt; sourceTree = "<group>"; };
+		9DB59EA52487471900C57C78 /* DevApple.vii */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = DevApple.vii; sourceTree = "<group>"; };
+		9DB59EA72487471900C57C78 /* dos33_template.dsk */ = {isa = PBXFileReference; lastKnownFileType = file; path = dos33_template.dsk; sourceTree = "<group>"; };
+		9DB59EA92487471900C57C78 /* errorFilter.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = errorFilter.sh; sourceTree = "<group>"; };
+		9DB59EAB2487471900C57C78 /* head.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = head.mk; sourceTree = "<group>"; };
+		9DB59EAD2487471900C57C78 /* prodos_template.dsk */ = {isa = PBXFileReference; lastKnownFileType = file; path = prodos_template.dsk; sourceTree = "<group>"; };
+		9DB59EAF2487471900C57C78 /* tail.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = tail.mk; sourceTree = "<group>"; };
+		9DB59EB12487471900C57C78 /* V2Make.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = V2Make.scpt; sourceTree = "<group>"; };
+		9DB59EB42487471900C57C78 /* joytest.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = joytest.xcscheme; path = ../../joytest.xcodeproj/xcshareddata/xcschemes/joytest.xcscheme; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DB59E932487471900C57C78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB59E9E2487471900C57C78 /* AppleCommander.jar in Frameworks */,
+				9DB59EA02487471900C57C78 /* bastokenizer-tools-bt-0.2.0.jar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DB59E872487471900C57C78 = {
+			isa = PBXGroup;
+			children = (
+				9DB59E972487471900C57C78 /* joytest */,
+				9DB59E8F2487471900C57C78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DB59E8F2487471900C57C78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DB59E8E2487471900C57C78 /* joytest */,
+				9DB59E912487471900C57C78 /* joytest.dsk */,
+				9DB59E962487471900C57C78 /* doNotBuild */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DB59E972487471900C57C78 /* joytest */ = {
+			isa = PBXGroup;
+			children = (
+				9DB59E982487471900C57C78 /* main.c */,
+				9DB59E9A2487471900C57C78 /* Makefile */,
+				9DB59E9C2487471900C57C78 /* make */,
+				9DB59EB32487471900C57C78 /* Supporting Files */,
+			);
+			path = joytest;
+			sourceTree = "<group>";
+		};
+		9DB59E9C2487471900C57C78 /* make */ = {
+			isa = PBXGroup;
+			children = (
+				9DB59E9D2487471900C57C78 /* AppleCommander.jar */,
+				9DB59E9F2487471900C57C78 /* bastokenizer-tools-bt-0.2.0.jar */,
+				9DB59EA12487471900C57C78 /* createDiskImage */,
+				9DB59EA32487471900C57C78 /* bt */,
+				9DB59EA52487471900C57C78 /* DevApple.vii */,
+				9DB59EA72487471900C57C78 /* dos33_template.dsk */,
+				9DB59EA92487471900C57C78 /* errorFilter.sh */,
+				9DB59EAB2487471900C57C78 /* head.mk */,
+				9DB59EAD2487471900C57C78 /* prodos_template.dsk */,
+				9DB59EAF2487471900C57C78 /* tail.mk */,
+				9DB59EB12487471900C57C78 /* V2Make.scpt */,
+			);
+			path = make;
+			sourceTree = "<group>";
+		};
+		9DB59EB32487471900C57C78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DB59EB42487471900C57C78 /* joytest.xcscheme */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		9DB59E8C2487471900C57C78 /* joytest */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-C joytest $(ACTION)";
+			buildConfigurationList = 9DB59EB82487471900C57C78 /* Build configuration list for PBXLegacyTarget "joytest" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = joytest;
+			passBuildSettingsInEnvironment = 1;
+			productName = joytest;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		9DB59E8D2487471900C57C78 /* Binary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DB59EBB2487471900C57C78 /* Build configuration list for PBXNativeTarget "Binary" */;
+			buildPhases = (
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Binary;
+			productName = Binary;
+			productReference = 9DB59E8E2487471900C57C78 /* joytest */;
+			productType = "com.apple.product-type.tool";
+		};
+		9DB59E902487471900C57C78 /* DiskImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DB59EBE2487471900C57C78 /* Build configuration list for PBXNativeTarget "DiskImage" */;
+			buildPhases = (
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiskImage;
+			productName = DiskImage;
+			productReference = 9DB59E912487471900C57C78 /* joytest.dsk */;
+			productType = "com.apple.product-type.tool";
+		};
+		9DB59E952487471900C57C78 /* doNotBuild */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DB59EC12487471900C57C78 /* Build configuration list for PBXNativeTarget "doNotBuild" */;
+			buildPhases = (
+				9DB59E922487471900C57C78 /* Sources */,
+				9DB59E932487471900C57C78 /* Frameworks */,
+				9DB59E942487471900C57C78 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = doNotBuild;
+			productName = doNotBuild;
+			productReference = 9DB59E962487471900C57C78 /* doNotBuild */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DB59E882487471900C57C78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Jeremy Rand";
+				TargetAttributes = {
+					9DB59E8C2487471900C57C78 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					9DB59E8D2487471900C57C78 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					9DB59E902487471900C57C78 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					9DB59E952487471900C57C78 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9DB59E8B2487471900C57C78 /* Build configuration list for PBXProject "joytest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DB59E872487471900C57C78;
+			productRefGroup = 9DB59E8F2487471900C57C78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DB59E8C2487471900C57C78 /* joytest */,
+				9DB59E8D2487471900C57C78 /* Binary */,
+				9DB59E902487471900C57C78 /* DiskImage */,
+				9DB59E952487471900C57C78 /* doNotBuild */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DB59E922487471900C57C78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB59E9B2487471900C57C78 /* Makefile in Sources */,
+				9DB59E992487471900C57C78 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9DB59EB62487471900C57C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		9DB59EB72487471900C57C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+			};
+			name = Release;
+		};
+		9DB59EB92487471900C57C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VD9FGCW36C;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9DB59EBA2487471900C57C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VD9FGCW36C;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9DB59EBC2487471900C57C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VD9FGCW36C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = joytest;
+			};
+			name = Debug;
+		};
+		9DB59EBD2487471900C57C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VD9FGCW36C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = joytest;
+			};
+			name = Release;
+		};
+		9DB59EBF2487471900C57C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VD9FGCW36C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = joytest.dsk;
+			};
+			name = Debug;
+		};
+		9DB59EC02487471900C57C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VD9FGCW36C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = joytest.dsk;
+			};
+			name = Release;
+		};
+		9DB59EC22487471900C57C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VD9FGCW36C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "__fastcall__=\"\"";
+				HEADER_SEARCH_PATHS = (
+					$TEMP_ROOT/joytest.build/$CONFIGURATION/joytest.build/DerivedSources,
+					/usr/local/share/cc65/include,
+				);
+				PRODUCT_NAME = doNotBuild;
+			};
+			name = Debug;
+		};
+		9DB59EC32487471900C57C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VD9FGCW36C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "__fastcall__=\"\"";
+				HEADER_SEARCH_PATHS = (
+					$TEMP_ROOT/joytest.build/$CONFIGURATION/joytest.build/DerivedSources,
+					/usr/local/share/cc65/include,
+				);
+				PRODUCT_NAME = doNotBuild;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DB59E8B2487471900C57C78 /* Build configuration list for PBXProject "joytest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB59EB62487471900C57C78 /* Debug */,
+				9DB59EB72487471900C57C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DB59EB82487471900C57C78 /* Build configuration list for PBXLegacyTarget "joytest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB59EB92487471900C57C78 /* Debug */,
+				9DB59EBA2487471900C57C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DB59EBB2487471900C57C78 /* Build configuration list for PBXNativeTarget "Binary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB59EBC2487471900C57C78 /* Debug */,
+				9DB59EBD2487471900C57C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DB59EBE2487471900C57C78 /* Build configuration list for PBXNativeTarget "DiskImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB59EBF2487471900C57C78 /* Debug */,
+				9DB59EC02487471900C57C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DB59EC12487471900C57C78 /* Build configuration list for PBXNativeTarget "doNotBuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB59EC22487471900C57C78 /* Debug */,
+				9DB59EC32487471900C57C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DB59E882487471900C57C78 /* Project object */;
+}
