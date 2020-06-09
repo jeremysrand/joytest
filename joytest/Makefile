@@ -11,6 +11,9 @@
 #
 
 include make/head.mk
+export CC65_HOME := /Users/jrand/Coding/AppleCoding/Apple2/cc65/cc65
+CC65_BIN=/Users/jrand/Coding/AppleCoding/Apple2/cc65/cc65/bin
+
 
 # Customize this file to control what gets built, what machines to
 # target, where in memory to put it, etc.
@@ -21,7 +24,7 @@ PGM=joytest
 # Uncomment the one you want below (the first one is the default):
 #    MACHINE = apple2
 #    MACHINE = apple2-dos33
-#    MACHINE = apple2-system
+MACHINE = apple2-system
 #    MACHINE = apple2-loader
 #    MACHINE = apple2-reboot
 #    MACHINE = apple2enh
@@ -145,7 +148,7 @@ SRCDIRS+=
 
 # If you want to link the joystick driver with your executable,
 # uncomment the next line.
-#    DRIVERS += joystick
+DRIVERS += joystick
 #
 # To use the joystick driver, add code which looks like this to your
 # project:
