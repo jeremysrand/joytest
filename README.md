@@ -1,11 +1,11 @@
 joytest
 =======
 
-This is a joystick test program for the cc65 joystick driver.  A problem was found with the original cc65 driver so it is being re-written.  I am creating this program to provide feedback that the new implementation works well (or doesn't work well) on a variety of HW.  I have access to an Apple //e and an Apple //gs, each with a CH brand joystick attached.  By making this program available, I am hoping to get feedback from more of the community and get coverage of other HW.
+This is a joystick test program for the cc65 joystick driver.  A problem was found with the original cc65 driver so it has being re-written by Oliver Schmidt.  I am creating this program to provide feedback on the new implementation when run on a variety of HW.  I have access to an Apple //e and an Apple //gs, each with a CH brand joystick attached.  By making this program available, I am hoping to get feedback from more of the community and get coverage of other HW.
 
 When run, the left side of the screen shows the current state of the joystick as read by the cc65 driver.  The direction of the joystick (if any) and the state of the two buttons is displayed.  The right side displays information about X or Y axis testing which may be useful for tweaking the thresholds used to determine direction.
 
-If you have an accelerator, you may want to disable it.  For systems that shipped running at greater than 1MHz (like the //gs and the //c+), testing at 1MHz and at accelerated speed is useful.  Feel free to provide feedback about the behaviour of the driver on a machine with an accelerator card active is interesting but I don't think the cc65 project intends to add any support for accelerator detection.  Most important is to show that it works acceptably at the speed(s) supported by the platform as it originally shipped.
+If you have an accelerator, you may want to disable it.  For systems that shipped running at greater than 1MHz (like the //gs and the //c+), testing at 1MHz and at accelerated speed is useful.  Feel free to provide feedback about the behaviour of the driver on a machine with an optional accelerator card active.  Although this information is interesting, but I don't think the cc65 project intends to add any support for accelerator detection and handling.  Most important is to show that it works acceptably at the speed(s) supported by the platform as it originally shipped.
 
 There are a series of tests that are worth running.
 
@@ -40,7 +40,10 @@ Joystick Disconnected:
 
 This test ensures that the program does not hang if it tries to poll a joystick which is not present.  If possible, disconnect your joystick(s) and then run the program again.  The direction reported by the driver is probably "down right" but the program should still be responsive.  You should see the test type change if you press X or Y.  You should be able to switch between polling the two different joysticks by pressing 0 and 1.  If you have Open Apple and Closed Apple/Option keys (//e and later only), you should see that the buttons highlight on the first joystick when pressed on the keyboard even though no joystick is present.  If you press Q, the program should quit.
 
-If you encounter any oddities or your thresholds from the X axis or Y axis tests are weird, please contact me.  Thanks for any help you can provide to harden the cc65 josystick driver on the Apple //!
+Issues Or Feedback:
+------------------------
+
+If you encounter any oddities or your thresholds from the X axis or Y axis tests are weird, please contact me or raise an issue against this project on GitHub.  Thanks for any help you can provide to harden the cc65 josystick driver on the Apple //.
 
 [Download a disk image](https://github.com/jeremysrand/joytest/releases/download/0.1/joytest.dsk)
 
