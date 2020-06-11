@@ -21,7 +21,7 @@
 
 // Defines
 
-#define SW_VERSION "0.1"
+#define SW_VERSION "0.2"
 
 
 // Globals
@@ -115,6 +115,9 @@ void pollJoystick(void)
     
     cputsxy(0, 11, "BUTTONS:");
     
+    cputsxy(20, 10, "X POSITION:     ");
+    cputsxy(20, 11, "Y POSITION:     ");
+    
     cputsxy(0, 20, "PRESS 0/1 TO SELECT JOYSTICK");
     cputsxy(0, 21, "PRESS X/Y TO SELECT AXIS TEST");
     cputsxy(0, 22, "PRESS C TO CLEAR TEST RESULTS");
@@ -126,6 +129,8 @@ void pollJoystick(void)
     
     do {
         joyDriverMask = joy_read(joystickNum);
+        
+        drawJoystick(joyDriverMask);
         
         if (testingX)
         {
@@ -178,6 +183,8 @@ void pollJoystick(void)
                 cputs("N/A");
             else
                 cprintf("%3d", lowestRight);
+            
+            y = pdlRead(pdlNum + 1);
         }
         else
         {
@@ -230,9 +237,14 @@ void pollJoystick(void)
                 cputs("N/A");
             else
                 cprintf("%3d", lowestDown);
+                
+            x = pdlRead(pdlNum - 1);
         }
         
-        drawJoystick(joyDriverMask);
+        gotoxy(36, 10);
+        cprintf("%3d", x);
+        gotoxy(36, 11);
+        cprintf("%3d", y);
         
         cputcxy(14, 3, '0' + joystickNum);
         
