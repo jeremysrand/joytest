@@ -3,7 +3,7 @@ joytest
 
 This is a joystick test program for the cc65 joystick driver.  A problem was found with the original cc65 driver so it has being re-written by Oliver Schmidt.  I am creating this program to provide feedback on the new implementation when run on a variety of HW.  I have access to an Apple //e and an Apple //gs, each with a CH brand joystick attached.  By making this program available, I am hoping to get feedback from more of the community and get coverage of other HW.  Please download the disk image to assist in getting greater coverage of this new joystick driver:
 
-[Download a disk image](https://github.com/jeremysrand/joytest/releases/download/0.2/joytest.dsk)
+[Download a disk image](https://github.com/jeremysrand/joytest/releases/download/0.3/joytest.dsk)
 
 When run, the left side of the screen shows the current state of the joystick as read by the cc65 driver.  The direction of the joystick (if any) and the state of the two buttons is displayed.  The right side displays information about X or Y axis testing which may be useful for tweaking the thresholds used to determine direction.  Below that is a current X and Y position (0-255) as read by the ROM routine, not the cc65 driver.  If your joystick is not centred, producing noisy samples or some other problem outside of those with the cc65 driver itself, you may see that here.
 
@@ -35,12 +35,7 @@ With my HW, I get 14 for the highest up and lowest centre thresholds and 223 for
 Second Joystick:
 --------------------
 
-If you have a second joystick, it can be tested also.  Press 1 to switch to the second joystick (0 returns you to the first joystick).  Then repeat all of the tests described above except with this joystick.
-
-Joystick Disconnected:
----------------------------
-
-This test ensures that the program does not hang if it tries to poll a joystick which is not present.  If possible, disconnect your joystick(s) and then run the program again.  The direction reported by the driver is probably "down right" but the program should still be responsive.  You should see the test type change if you press X or Y.  You should be able to switch between polling the two different joysticks by pressing 0 and 1.  If you have Open Apple and Closed Apple/Option keys (//e and later only), you should see that the buttons highlight on the first joystick when pressed on the keyboard even though no joystick is present.  If you press Q, the program should quit.
+If you have a second joystick, it can be tested also.  Press 2 to switch to the second joystick (1 returns you to the first joystick).  Then repeat all of the tests described above except with this joystick.
 
 Issues Or Feedback:
 ------------------------
