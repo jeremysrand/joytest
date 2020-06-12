@@ -21,7 +21,7 @@
 
 // Defines
 
-#define SW_VERSION "0.3"
+#define SW_VERSION "0.4"
 
 
 // Globals
@@ -95,6 +95,7 @@ void drawJoystick(uint8_t joyDriverMask)
 
 void pollJoystick(void)
 {
+    uint8_t joystickCount;
     uint8_t joyDriverMask = 0x00;
     uint8_t prevJoyDriverMask = 0x00;
     uint8_t joystickNum = 0;
@@ -107,9 +108,21 @@ void pollJoystick(void)
     
     clearGlobals();
     
+    joystickCount = joy_count();
+    
     clrscr();
     cputsxy(11, 0, "CC65 JOYSTICK TEST");
     cputsxy(11, 1, "------------------");
+    
+    if (joystickCount == 0)
+    {
+        cputsxy(0, 3, "NO JOYSTICKS FOUND");
+        cputsxy(0, 4, "PRESS ANY KEY TO QUIT");
+        while (!kbhit())
+            ;
+        cgetc();
+        return;
+    }
     
     cputsxy(0, 3, "JOYSTICK NUM:");
     
@@ -118,7 +131,12 @@ void pollJoystick(void)
     cputsxy(20, 10, "X POSITION:     ");
     cputsxy(20, 11, "Y POSITION:     ");
     
-    cputsxy(0, 20, "PRESS 1/2 TO SELECT JOYSTICK NUMBER");
+    if (joystickCount > 1)
+    {
+        gotoxy(0, 20);
+        cprintf("PRESS 1%c%u TO SELECT JOYSTICK NUMBER",
+                (joystickCount > 2 ? '-' : '/'), joystickCount);
+    }
     cputsxy(0, 21, "PRESS X/Y TO SELECT AXIS TEST");
     cputsxy(0, 22, "PRESS C TO CLEAR TEST RESULTS");
     cputsxy(0, 23, "PRESS Q TO QUIT");
@@ -257,9 +275,29 @@ void pollJoystick(void)
             {
                 case '1':
                 case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                {
+                    uint8_t newJoystickNum = (ch - '1');
+                    
+                    if (joystickCount < 2)
+                        break;
+                    
+                    if (newJoystickNum >= joystickCount)
+                        break;
+                    
+                    if (newJoystickNum == joystickNum)
+                        break;
+                    
                     joystickNum = (ch - '1');
                     pdlNum = (testingX ? (2 * joystickNum) : ((2 * joystickNum) + 1));
-                    
+                }
+
                     // Fallthrough...
                 case 'C':
                 case 'c':
