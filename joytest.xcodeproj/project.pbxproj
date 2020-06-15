@@ -46,8 +46,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D1716772490096400C83148 /* pdlread.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = pdlread.s; sourceTree = "<group>"; };
-		9D171678249009C300C83148 /* pdlread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pdlread.h; sourceTree = "<group>"; };
 		9D17167B2490184800C83148 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9D17167C2490187500C83148 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9DB59E8E2487471900C57C78 /* joytest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = joytest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,8 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				9DB59E982487471900C57C78 /* main.c */,
-				9D1716772490096400C83148 /* pdlread.s */,
-				9D171678249009C300C83148 /* pdlread.h */,
 				9DB59E9A2487471900C57C78 /* Makefile */,
 				9DB59E9C2487471900C57C78 /* make */,
 				9DB59EB32487471900C57C78 /* Supporting Files */,
