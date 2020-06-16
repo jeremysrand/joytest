@@ -3,7 +3,7 @@ joytest
 
 This is a joystick test program for the cc65 joystick driver.  A problem was found with the original cc65 driver so it has being re-written by Oliver Schmidt.  I am creating this program to provide feedback on the new implementation when run on a variety of HW.  I have access to an Apple //e and an Apple //gs, each with a CH brand joystick attached.  By making this program available, I am hoping to get feedback from more of the community and get coverage of other HW.  Please download the disk image to assist in getting greater coverage of this new joystick driver:
 
-[Download a disk image](https://github.com/jeremysrand/joytest/releases/download/0.5/joytest.dsk)
+[Download a disk image](https://github.com/jeremysrand/joytest/releases/download/0.6/joytest.dsk)
 
 When run, the screen shows the current state of the joystick as read by the cc65 driver.  The direction of the joystick (if any) and the state of the two buttons is displayed.
 

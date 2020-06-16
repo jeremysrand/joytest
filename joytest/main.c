@@ -20,7 +20,7 @@
 
 // Defines
 
-#define SW_VERSION "0.5"
+#define SW_VERSION "0.6"
 
 
 // Implementation
